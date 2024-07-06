@@ -15,11 +15,12 @@ pipeline {
         nexusUrl='3.90.81.75:8081' 
     }
     stages{
-        stage('print app versio')
-        steps{
+        stage('print app versio'){
+            steps{
             sh"""
             echo "Application version: ${params.appVersion}"
             """
+            }
         }
     }
 
