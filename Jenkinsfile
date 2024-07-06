@@ -15,7 +15,7 @@ pipeline {
         nexusUrl='3.90.81.75:8081' 
     }
     stages{
-        stage('print app versio'){
+        stage('backned-deploy'){
             steps{
             sh"""
             echo "Application version: ${params.appVersion}"
